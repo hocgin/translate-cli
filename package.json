@@ -1,0 +1,37 @@
+{
+  "name": "translate-cli",
+  "version": "1.0.0",
+  "description": "A CLI translation tool supporting multiple engines (Google/Bing/MyMemory)",
+  "type": "module",
+  "bin": {
+    "translate": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "start": "node dist/cli.js",
+    "dev": "tsx src/cli.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src/",
+    "format": "prettier --write 'src/**/*.ts'"
+  },
+  "dependencies": {
+    "@vitalets/google-translate-api": "^9.2.1",
+    "bing-translate-api": "^4.2.0",
+    "commander": "^13.1.0",
+    "node-fetch": "^3.3.2",
+    "ora": "^8.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "@vitest/coverage-v8": "^3.0.6",
+    "eslint": "^9.20.0",
+    "prettier": "^3.5.2",
+    "tsup": "^8.3.6",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.24.0",
+    "vitest": "^3.0.6"
+  }
+}
