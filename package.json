@@ -1,5 +1,5 @@
 {
-  "name": "translate-cli",
+  "name": "@hocgin/translate-cli",
   "version": "1.0.0",
   "description": "A CLI translation tool supporting multiple engines (Google/Bing/MyMemory)",
   "type": "module",
