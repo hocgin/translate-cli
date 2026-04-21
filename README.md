@@ -115,6 +115,18 @@ The format is `[SOURCE]:[TARGETS]`, where targets can be combined with `+`:
 
 Run `translate --list-languages` to see all supported language codes.
 
+## Claude Code Skill
+
+This project includes a [Claude Code](https://claude.ai/claude-code) skill that lets Claude automatically use `translate-cli` when you ask for translations in conversation.
+
+### Install
+
+```bash
+npx skills add https://github.com/hocgin/translate-cli
+```
+
+After installation, simply say things like "translate this to Chinese" or "翻译成英文" in Claude Code, and it will invoke the skill automatically.
+
 ## Development
 
 ```bash

@@ -115,6 +115,18 @@ translate --list-languages
 
 运行 `translate --list-languages` 查看所有支持的语言代码。
 
+## Claude Code Skill
+
+本项目附带 [Claude Code](https://claude.ai/claude-code) Skill，安装后 Claude Code 会在对话中自动使用 `translate-cli` 进行翻译。
+
+### 安装
+
+```bash
+npx skills add https://github.com/hocgin/translate-cli
+```
+
+安装后，在 Claude Code 中说"翻译成中文"、"translate to english"等即可自动触发翻译。
+
 ## 开发
 
 ```bash
